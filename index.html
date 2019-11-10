@@ -15,16 +15,66 @@
         <nav>
             <div class="nav-wrapper indigo accent-2">
                 <a class="left valign-wrapper" href=""><img class ="iflogo" src="./imagens/if-png-5.png" alt="logo IFRS"></a>
-                <a href="#" class="brand-logo center">App ES</a>
+                <a href="" class="brand-logo center">App ES</a>
                 <a class="right valign-wrapper" href=""><img class="gitlogo" src="./imagens/github-logo.png" alt="logo Github"></a>
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="grafico">
+            <div class="grafico center">
+                <img class="grafico responsive-img hide" src="" alt="grafico">
             </div>
         </div>
+        <div class="row">
+            <div class="col s12 center"><b>Adicionar Notas</b></div>
+        </div>
+        <form>
+            <div class="inputs row">
+                <div class="input-field col s3">
+                    <input placeholder="Materia" id="materia" type="text" maxlength="10" class="validate">
+                    <label for="Materia">Materia</label>
+                </div>
+                <div class="input-field col s3">
+                    <input placeholder="Nota" id="1_bim" type="number" data-error="Deve ser entre 0 10" step="0.1" min="0" max="10" class="validate">
+                    <label for="1_bim">1º Bimestre</label>
+                </div>
+                <div class="input-field col s3">
+                    <input placeholder="Nota" id="2_bim" type="number" step="0.1" min="0" max="10" class="validate">
+                    <label for="2_bim">2º Bimestre</label>
+                </div>
+                <div class="color-picker-container col s3 center">
+                </div>
+            </div>
+            <div class="inputs row">
+                <div class="input-field col s3 offset-s3">
+                    <input placeholder="Nota" id="3_bim" type="number" step="0.1" min="0" max="10" class="validate">
+                    <label for="3_bim">3º Bimestre</label>
+                </div>
+                <div class="input-field col s3">
+                    <input placeholder="Nota" id="4_bim" type="number" step="0.1" min="0" max="10" class="validate">
+                    <label for="4_bim">4º Bimestre</label>
+                </div>
+                    <button class="submitbtn btn waves-effect waves-light col s3" type="submit">Salvar</button>
+            </div>
+        </form>
+        <div class="medias row">
+        </div>
+        <div class="row">
+            <div class="col s12 center"><b>Notas</b></div>
+        </div>
+        <table class="centered striped">
+            <thead>
+                <tr>
+                    <th>Materia</th>
+                    <th>1º Bim</th>
+                    <th>2º Bim</th>
+                    <th>3º Bim</th>
+                    <th>4º Bim</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </main>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="./js/main.js"></script>

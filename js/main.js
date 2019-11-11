@@ -89,10 +89,14 @@ function addavg (names, grades, color){
 
     for(let i=0;i<names.length;i++){
         let aux = 0;
+        let aux2 = 0;
         for(let j=0;j<grades[i].length;j++){
             aux += grades[i][j];
+            if(grades[i][j] == null){
+                aux2++
+            }
         }
-        media.push(aux/grades[i].length);
+        media.push(aux/grades[i].length-aux2);
     }
     for(let i=0;i<names.length;i++){
         if(i%4 == 0) {

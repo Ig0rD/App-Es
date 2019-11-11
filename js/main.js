@@ -96,7 +96,7 @@ function addavg (names, grades, color){
                 aux2++
             }
         }
-        media.push(aux/grades[i].length-aux2);
+        media.push(aux/(grades[i].length-aux2));
     }
     for(let i=0;i<names.length;i++){
         if(i%4 == 0) {
